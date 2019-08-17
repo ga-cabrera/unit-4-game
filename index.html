@@ -7,6 +7,9 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!-- link to RESET -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <!-- link to BOOTSTRAP CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     </head>
     <body>
         <header class="header">
@@ -17,25 +20,22 @@
             <p>
                 You will be given a random number at the start of the game.
             </p>
-            <br>
             <p>
                 There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
             </p>
-            <br>
             <p>
                 you win the game by matching your total score to a random number, you lose the game if your total score goes aboe the random number.
             </p>
-            <br>
             <p>
                 The value of each crystal is hidden from you until you click on it.
             </p>
-            <br>
             <p>
                 Each time when the game starts, the game will change the values of each crystals.
             </p>
         </div>
         <!-- ----------------------- THE GAME ----------------------- -->
         <div class="randomNumBox">
+            <h2>Get this number:</h2>
             <h2 id="randomNum"><!-- Where random number will be added --></h2>
         </div>
         <!-- Win-Lose box -->
@@ -44,11 +44,11 @@
             <h3>Losses: <span id="lose"></span> </h3>
         </div>
         <!-- Where crystal gem photos show their faces -->
-        <div class="Images">
-            <img src="assets/images/blue-gem.png" width="100px" height="100px" alt="Blue Gem">
-            <img src="assets/images/green-gem.png" width="100px" height="100px" alt="Green Gem">
-            <img src="assets/images/red-gem.png" width="100px" height="100px" alt="Red Gem">
-            <img src="assets/images/yellow-gem.png" width="100px" height="100px" alt="Yellow Gem">
+        <div class="images">
+            <img id="blue-gem" src="assets/images/blue-gem.png" width="100px" height="100px" alt="Blue Gem">
+            <img id="green-gem" src="assets/images/green-gem.png" width="100px" height="100px" alt="Green Gem">
+            <img id="red-gem" src="assets/images/red-gem.png" width="100px" height="100px" alt="Red Gem">
+            <img id="yellow-gem" src="assets/images/yellow-gem.png" width="100px" height="100px" alt="Yellow Gem">
         </div>
         <div class="score-box">
             <h3>Your total score:</h3>
@@ -56,5 +56,9 @@
         </div>
         <!-- LINK TO JAVASCRIPT -->
         <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <!-- LINKS TO jquery/popper.js/bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
