@@ -8,7 +8,7 @@
 // whenever a new game starts, each gem will restart with a different random number from their array, the computer will give you another random number from the number array, and your total score will be 0. 
 
 // Functions and Values
-
+$(document).ready(function(){
 var blueGem = Math.floor(Math.random()*23)+5;
     console.log("Blue Gem: " + blueGem);
 var greenGem = Math.floor(Math.random()*27)+1;
@@ -19,7 +19,8 @@ var yellowGem = Math.floor(Math.random()*15)+1
     console.log("Yellow Gem: " + yellowGem);
 var randomNum = Math.floor(Math.random()*250)+30;
     console.log("Random Number: " + randomNum);
-    $("#randomNum").text(randomNum);
+    $("#randomNum").html(randomNum);
+
 
 var win= 0;
 var lose= 0;
@@ -30,7 +31,7 @@ function reset() {
     console.log("Wins: "+win);
     console.log("Losses: "+lose);
     // -------------------------------
-    var blueGem = Math.floor(Math.random()*23)+5;
+    blueGem = Math.floor(Math.random()*23)+5;
     console.log("Blue Gem: " + blueGem);
     greenGem = Math.floor(Math.random()*27)+1;
     console.log("Green Gem: " + greenGem);
@@ -43,7 +44,24 @@ function reset() {
     totalScore=0;
 };
 $("#blue-gem").click(function(){
-    var newScore = score + blueGem;
+    var newScore = totalScore += blueGem;
     console.log("Score Total: " + newScore);
     $("#scoreDisplay").html(newScore);
 })
+$("#green-gem").click(function(){
+    var newScore = totalScore += greenGem;
+    console.log("Score Total: " + newScore);
+    $("#scoreDisplay").html(newScore);
+})
+$("#red-gem").click(function(){
+    var newScore = totalScore += redGem;
+    console.log("Score Total: " + newScore);
+    $("#scoreDisplay").html(newScore);
+})
+$("#yellow-gem").click(function(){
+    var newScore = totalScore += yellowGem;
+    console.log("Score Total: " + newScore);
+    $("#scoreDisplay").html(newScore);
+})
+
+});
