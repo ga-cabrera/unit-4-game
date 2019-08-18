@@ -2,7 +2,14 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Diamond a Dozen</title>
+        <title>Diamond a Dozen</title> 
+         <!-- LINKS TO jquery/popper.js/bootstrap -->
+         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <!-- LINK TO JAVASCRIPT -->
+         <script type="text/javascript" src="assets/javascript/game.js"></script>
         <!-- link to CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!-- link to RESET -->
@@ -45,20 +52,22 @@
         </div>
         <!-- Where crystal gem photos show their faces -->
         <div class="images">
-            <img id="blue-gem" src="assets/images/blue-gem.png" width="100px" height="100px" alt="Blue Gem">
-            <img id="green-gem" src="assets/images/green-gem.png" width="100px" height="100px" alt="Green Gem">
-            <img id="red-gem" src="assets/images/red-gem.png" width="100px" height="100px" alt="Red Gem">
-            <img id="yellow-gem" src="assets/images/yellow-gem.png" width="100px" height="100px" alt="Yellow Gem">
+            <div id="blue-gem">
+                <img src="assets/images/blue-gem.png" width="100px" height="100px" alt="Blue Gem">
+            </div>
+            <div id="green-gem">
+                <img src="assets/images/green-gem.png" width="100px" height="100px" alt="Green Gem">
+            </div>
+            <div id="red-gem">
+                <img src="assets/images/red-gem.png" width="100px" height="100px" alt="Red Gem">
+            </div>
+            <div id="yellow-gem">
+                <img src="assets/images/yellow-gem.png" width="100px" height="100px" alt="Yellow Gem">
+            </div>
         </div>
         <div class="score-box">
             <h3>Your total score:</h3>
-            <span id="score"><!-- Total score goes here--></span>
+            <span id="scoreDisplay"><!-- Total score goes here--></span>
         </div>
-        <!-- LINK TO JAVASCRIPT -->
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
-        <!-- LINKS TO jquery/popper.js/bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

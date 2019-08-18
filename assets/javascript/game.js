@@ -7,12 +7,43 @@
 // If your total score is equal to the computer's random number, you win, you'll be alerted that you won, your WIN count will increase by 1, and then the game will restart.
 // whenever a new game starts, each gem will restart with a different random number from their array, the computer will give you another random number from the number array, and your total score will be 0. 
 
-// Values
-var blueGem = [];
-var greenGem = [];
-var redGem = [];
-var yellowGem = [];
-var number = [];
-var totalScore = 0;
-var win = 0;
-var lose = 0;
+// Functions and Values
+
+var blueGem = Math.floor(Math.random()*23)+5;
+    console.log("Blue Gem: " + blueGem);
+var greenGem = Math.floor(Math.random()*27)+1;
+    console.log("Green Gem: " + greenGem);
+var redGem = Math.floor(Math.random()*12)+3;
+    console.log("Red Gem: " + redGem);
+var yellowGem = Math.floor(Math.random()*15)+1
+    console.log("Yellow Gem: " + yellowGem);
+var randomNum = Math.floor(Math.random()*250)+30;
+    console.log("Random Number: " + randomNum);
+    $("#randomNum").text(randomNum);
+
+var win= 0;
+var lose= 0;
+var totalScore= 0;
+
+function reset() {
+    // keeping track of how many wins and losses you have
+    console.log("Wins: "+win);
+    console.log("Losses: "+lose);
+    // -------------------------------
+    var blueGem = Math.floor(Math.random()*23)+5;
+    console.log("Blue Gem: " + blueGem);
+    greenGem = Math.floor(Math.random()*27)+1;
+    console.log("Green Gem: " + greenGem);
+    redGem = Math.floor(Math.random()*12)+3;
+    console.log("Red Gem: " + redGem);
+    yellowGem = Math.floor(Math.random()*15)+1
+    console.log("Yellow Gem: " + yellowGem);
+    randomNum = Math.floor(Math.random()*250)+30;
+    console.log("Random Number: " + randomNum);
+    totalScore=0;
+};
+$("#blue-gem").click(function(){
+    var newScore = score + blueGem;
+    console.log("Score Total: " + newScore);
+    $("#scoreDisplay").html(newScore);
+})
