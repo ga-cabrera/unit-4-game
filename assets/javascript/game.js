@@ -6,3 +6,13 @@
 // If your total score surpasses the computer's random number, you lose, you'll be alerted that you lost, your LOSE count will increase by 1, and then the game will restart.
 // If your total score is equal to the computer's random number, you win, you'll be alerted that you won, your WIN count will increase by 1, and then the game will restart.
 // whenever a new game starts, each gem will restart with a different random number from their array, the computer will give you another random number from the number array, and your total score will be 0. 
+
+// Values
+var blueGem = [];
+var greenGem = [];
+var redGem = [];
+var yellowGem = [];
+var number = [];
+var totalScore = 0;
+var win = 0;
+var lose = 0;
