@@ -41,27 +41,76 @@ function reset() {
     console.log("Yellow Gem: " + yellowGem);
     randomNum = Math.floor(Math.random()*250)+30;
     console.log("Random Number: " + randomNum);
+    $("#randomNum").html(randomNum);
     totalScore=0;
+    $("#scoreDisplay").html(totalScore);
 };
 $("#blue-gem").click(function(){
     var newScore = totalScore += blueGem;
     console.log("Score Total: " + newScore);
     $("#scoreDisplay").html(newScore);
+    if (totalScore===randomNum){
+        win++;
+        $("#win").html(win);
+        alert("Congrats! You win!") 
+        reset(); 
+    }
+    else if(totalScore>randomNum){
+        lose++;
+        $("#lose").html(lose);
+        alert("Whoops, looks like you suck buddy. Try again!")
+        reset();
+    }
 })
 $("#green-gem").click(function(){
-    var newScore = totalScore += greenGem;
-    console.log("Score Total: " + newScore);
-    $("#scoreDisplay").html(newScore);
+    totalScore += greenGem;
+    console.log("Score Total: " + totalScore);
+    $("#scoreDisplay").html(totalScore);
+    if (totalScore===randomNum){
+        win++;
+        $("#win").html(win);
+        alert("Congrats! You win!") 
+        reset(); 
+    }
+    else if(totalScore>randomNum){
+        lose++;
+        $("#lose").html(lose);
+        alert("Whoops, looks like you suck buddy. Try again!")
+        reset();
+    }
 })
 $("#red-gem").click(function(){
     var newScore = totalScore += redGem;
     console.log("Score Total: " + newScore);
     $("#scoreDisplay").html(newScore);
+    if (totalScore===randomNum){
+        win++;
+        $("#win").html(win);
+        alert("Congrats! You win!") 
+        reset(); 
+    }
+    else if(totalScore>randomNum){
+        lose++;
+        $("#lose").html(lose);
+        alert("Whoops, looks like you suck buddy. Try again!")
+        reset();
+    }
 })
 $("#yellow-gem").click(function(){
     var newScore = totalScore += yellowGem;
     console.log("Score Total: " + newScore);
     $("#scoreDisplay").html(newScore);
+    if (totalScore===randomNum){
+        win++;
+        $("#win").html(win);
+        alert("Congrats! You win!") 
+        reset(); 
+    }
+    else if(totalScore>randomNum){
+        lose++;
+        $("#lose").html(lose);
+        alert("Whoops, looks like you suck buddy. Try again!")
+        reset();
+    }
 })
-
 });
